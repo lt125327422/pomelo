@@ -7,6 +7,10 @@ tag:
 ---
 
 # The ray tracing
+how it comes about that the ray-tracing and global-illumination
+over the period of traveling of light 
+
+
 the other day ,I learn some topic about ray racing without opengl
 or webgl etc. , with diving into this topic, I thought it's necessary
 to write some article to reinforce my memory and comprehend to it, and 
@@ -140,17 +144,8 @@ variable \
 
 `Camera`
 
-hit_record(point3 hit_point,vec3 normal,double t)
-
-sphere : hittable
-sphere_list : hittable
 
 
-ray is inside the sphere
-ray is outside the sphere
-
-performance effect
-objects in scene
 
 
 
