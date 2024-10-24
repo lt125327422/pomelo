@@ -82,13 +82,27 @@ Allow stack space and put argv into main
 because we want to get the params `argv` passed by system
 
 
-### gdb basis (extra)
+### CGDB basis (extra)
 ```
 ctrl + up (foucs on souce code)  i (focus on command input)
 stepi   step   step [n]  continue next
 backtrace
-p /x [variable]
 
+p/x [variable]
+x/3w  $esp   look in memory from esp for three words
+
+
+info threads
+thread [i]
+frame [i]
+i registers
+i frame
+i args
+i local
+
+watchpoint
+
+b []
 
 ```
 
