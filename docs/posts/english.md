@@ -166,5 +166,30 @@ these peculiar forms not only seemed designed to shock people emotionally, but t
 these lumps flickered continuously 
 
 ---
+
+
+The chang jiang big bridge connects the wu chang to jiang han.
+it's the longest bridge in wuhan
+the famous tower of huang he, which was found in 1961, lies about a mile away
+for hundreds of years, this bridge has saved the lives of travelers crossing the dangerous river  
+these friendly dogs which first were brought from asia were used as watchdog even in roman times
+now that the tunnel through this mountain has been built , the pass is less dangerous,
+but each year, the dogs are still sent out into snow mountain whenever a traveller is in difficulty  
+despite the new tunnel has been built, there are still a few people who rashly attempt to cross the pass on foot
+
+during the summer months, the monastery is very busy, for it is visited by thousands of people who cross the pass in cars
+as there are so many people about, the dogs have to be kept in a special enclosure
+in winter howerver life at monastery is quite different .
+
+
+during the summer months
+the monastery is very busy , for it is visited  by thousands of people who cross the pass in car ,
+as there are so many people about , the dogs have to be kept in a special enclosure
+in winter however life at monastery is quite different
+the temprature drops to -30 and very few people attempt to cross the Pass
+the monks prefer winter to summer for they have more privacy
+the dogs have greater freedom too
+for they are allowed to wander outside their enclosure
+
 ---
 

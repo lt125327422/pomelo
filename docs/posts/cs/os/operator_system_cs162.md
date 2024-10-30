@@ -125,3 +125,17 @@ set > resource > wsl integration
 
 Enable integration with my default WSL distro.
 Select one of your distros.
+
+---
+
+## project 1
+
+### arguments passing (easy)
+
+using strtok_r to split cmdline which is input by user into multiple
+separated words
+
+using esp to control stack 
+
+
+
