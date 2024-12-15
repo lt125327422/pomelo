@@ -17,6 +17,16 @@ async => Future
 async* => Stream
 
 
+flutter 打包和运行 环境诊断工具
+
+flutter doctor
+flutter analyze --suggestions
+
+flutter config  --jdk-dir  "/path/to/your jdk home"
+强制指定jdk版本
+
+flutter 
+
 ### Basic widget i flutter
 - base `Scaffold` `AppBar` `Container`
 - Layout `Flex` `Column` `Row` `Expanded` `Center` `SizedBox`

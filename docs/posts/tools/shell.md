@@ -5,6 +5,9 @@ write ll to file_list.txt directly
 echo $(ll) > file_list.txt
 exec ll and then write the output of ll to file_list.txt
 
+awk 对行进行过滤 并且只显示某几个字段列
+sort
+
 
 ifconfig en0 | awk
 
