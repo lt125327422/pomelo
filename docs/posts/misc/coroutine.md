@@ -1,12 +1,18 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Title</title>
-</head>
-<body>
-<script>
-    /**
+---
+date: 2024-10-9
+category:
+    - misc
+tag:
+    - misc
+---
+
+###
+generator 是实现 coroutine 行为的一种方式
+co 可以让我们在多个执行点之间切换
+
+```js
+
+  /**
      * @param ms {number}
      * @returns {Promise<void>}
      */
@@ -114,6 +120,5 @@
         }, 1000)
     })()
 
-</script>
-</body>
-</html>
+
+```
