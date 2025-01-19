@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Document</title>
+</head>
+<body>
+<script>
+
+    class Lock {
+
+        constructor({name="__lock_"}={}) {
+            this.isHold = false
+            this.name = name + (this.id += 1)
+        }
+
+        static id = -1
+
+        require(){
+            while (this.isHold){
+            }
+
+            return this.isHold = true
+        }
+
+        release(){
+            if (!this.isHold){
+                console.error("multi release lock")
+            }
+
+            this.isHold = false
+        }
+    }
+
+</script>
+</body>
+</html>

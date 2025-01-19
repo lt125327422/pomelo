@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Document</title>
+</head>
+<body>
+
+<script type="module">
+    import {select, createTicker, end, mapTo} from './producer_consumer_mode.js'
+
+    (async () => {
+        const ticker = createTicker(1000)
+        const ticker2 = createTicker(1500)
+
+        const doubledTicker = mapTo(ticker, (e) => e * e)
+        const toUnderline = mapTo(ticker2, () => "_".repeat(6))
+
+        //  实现 go 中的多路复用选择器
+        for await (const [type, item] of select([
+            end(doubledTicker, (v) => v >= 11),
+            end(toUnderline, (v, i) => i > 3),
+        ])) {
+            switch (type) {
+                case 0: {
+                    console.log(`doubled ${item}`)
+                    break
+                }
+                case 1: {
+                    console.log(`underline ${item}`)
+                    break
+                }
+                default: {
+                    break
+                }
+            }
+
+        }
+
+        console.log("onComplete select")
+    })()
+</script>
+</body>
+</html>
