@@ -6,20 +6,63 @@
 </head>
 <body>
 
+<button class="btn">noop</button>
 
-<script>
+<script type="module">
+    import {createTicker, fromEvent, sleep, WaitGroup, waitUntil} from './producer_consumer_mode.js';
 
-    const a = {
-        aa:1,
-        valueOf(){
-            const v = this.aa
-            this.aa+=1
-            return v
-        }
+    //  wait group
+    function createAG(n) {
+        return {
+            async* [Symbol.asyncIterator]() {
+                let i = 0;
+                while (i < n) {
+                    yield i;
+                    i += 1;
+                    await sleep(1000);
+                }
+            }
+        };
     }
 
-    // console.log(a.valueOf())
-    console.log(a == 1 && a == 2 && a == 3 && a == 4)
+    // for await (const agElement of createAG(3)) {
+    //     console.log(agElement);
+    // }
+
+    // ;(async ()=>{
+    //     for await (const evt of fromEvent(document.querySelector('.btn'),'click')) {
+    //         console.log(evt);
+    //     }
+    // })()
+
+    ;(async () => {
+        const wg = new WaitGroup();
+        wg.add();
+        wg.add();
+
+        setTimeout(() => {
+            console.log("timeout 1");
+            wg.done();
+        }, 3000);
+
+        setTimeout(() => {
+            console.log("timeout 2");
+            // wg.done();
+        }, 2000);
+
+        await wg.wait();
+
+        console.log("timeout 1,2");
+
+        // setTimeout(() => {
+        //     v = 0;
+        //     console.log(v);
+        // }, 1000);
+        // let v = 1;
+        // await waitUntil(() => v === 0);
+        // console.log("ccc");
+    })();
+
 </script>
 </body>
 </html>
